@@ -73,11 +73,6 @@ comment:comment
 };
   try{
 
-  // Pehle Thank You dikhao
-  form.style.display = "none";
-  successBox.style.display = "block";
-
-  // Background me data bhejo
   fetch(WEB_APP_URL,{
     method:"POST",
     mode:"no-cors",
@@ -87,17 +82,13 @@ comment:comment
     body:JSON.stringify(reviewData)
   });
 
-  // 2 second baad Google Maps Review page kholo
-  setTimeout(() => {
-    window.location.href = "https://g.page/r/CSSG0a9z6pD_EBE/review";
-  }, 100);
+  window.location.href = "https://g.page/r/CSSG0a9z6pD_EBE/review";
 
 }catch(error){
 
-  console.error(error);
-  alert("Network error. Please try again.");
+  alert("Please try again.");
 
-}
+  }
 });
 setTimeout(() => {
 
