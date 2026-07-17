@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vinayak Medical Store | Customer Feedback</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<div class="logo">
+
+💚
+
+</div>
+
+<h1>Vinayak Medical Store</h1>
+
+<p class="subtitle">
+
+Your feedback helps us improve our service.
+
+</p>
+
+<form id="reviewForm">
+
+<div class="input-group">
+
+<label>Your Name</label>
+
+<input
+
+type="text"
+
+id="name"
+
+placeholder="Enter your name"
+
+required
+
+>
+
+</div>
+
+<div class="input-group">
+
+<label>Mobile Number</label>
+
+<input
+
+type="tel"
+
+id="mobile"
+
+maxlength="10"
+
+placeholder="10 Digit Mobile Number"
+
+required
+
+>
+
+</div>
+<div class="input-group">
+
+<label>Your Rating</label>
+
+<div class="stars">
+
+<input type="radio" id="star5" name="rating" value="5" checked>
+
+<label for="star5">★</label>
+
+<input type="radio" id="star4" name="rating" value="4">
+
+<label for="star4">★</label>
+
+<input type="radio" id="star3" name="rating" value="3">
+
+<label for="star3">★</label>
+
+<input type="radio" id="star2" name="rating" value="2">
+
+<label for="star2">★</label>
+
+<input type="radio" id="star1" name="rating" value="1">
+
+<label for="star1">★</label>
+
+</div>
+
+</div>
+
+<div class="input-group">
+
+<label>Your Feedback</label>
+
+<textarea
+
+id="comment"
+
+rows="5"
+
+placeholder="Write your feedback here..."
+
+required
+
+></textarea>
+
+</div>
+
+<button
+
+type="submit"
+
+id="submitBtn"
+
+>
+
+Submit Feedback
+
+</button>
+
+</form>
+
+<div
+
+id="successBox"
+
+class="success-box"
+
+style="display:none;"
+
+>
+
+<h2>🎉 Thank You!</h2>
+
+<p>
+
+Your feedback has been submitted successfully.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+  <script src="comments.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
