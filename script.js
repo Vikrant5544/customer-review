@@ -1,5 +1,4 @@
-const WEB_APP_URL = "const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyrIs87-kGsHMEkq9mosUPpF9N0CWjOjmnuMG6x39Dza5bx4Q_6D1cqSPZ30us3hqlr/exec";
-
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyrIs87-kGsHMEkq9mosUPpF9N0CWjOjmnuMG6x39Dza5bx4Q_6D1cqSPZ30us3hqlr/exec";
 const form = document.getElementById("reviewForm");
 const successBox = document.getElementById("successBox");
 const commentBox = document.getElementById("comment");
