@@ -73,31 +73,17 @@ comment:comment
 };
   try{
 
-const response = await fetch(WEB_APP_URL,{
-
+await fetch(WEB_APP_URL,{
 method:"POST",
-
+mode:"no-cors",
 headers:{
 "Content-Type":"application/json"
 },
-
 body:JSON.stringify(reviewData)
-
 });
 
-const result = await response.json();
-
-if(result.success){
-
 form.style.display="none";
-
 successBox.style.display="block";
-
-}else{
-
-alert("Something went wrong. Please try again.");
-
-}
 
 }catch(error){
 
