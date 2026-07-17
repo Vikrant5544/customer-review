@@ -73,29 +73,31 @@ comment:comment
 };
   try{
 
-await fetch(WEB_APP_URL,{
-method:"POST",
-mode:"no-cors",
-headers:{
-"Content-Type":"application/json"
-},
-body:JSON.stringify(reviewData)
-});
+  // Pehle Thank You dikhao
+  form.style.display = "none";
+  successBox.style.display = "block";
 
-form.style.display="none";
-successBox.style.display="block";
-    setTimeout(() => {
-window.location.href =
-"https://g.page/r/CSSG0a9z6pD_EBE/review";
+  // Background me data bhejo
+  fetch(WEB_APP_URL,{
+    method:"POST",
+    mode:"no-cors",
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify(reviewData)
+  });
+
+  // 2 second baad Google Maps Review page kholo
+  setTimeout(() => {
+    window.location.href = "https://g.page/r/CSSG0a9z6pD_EBE/review";
+  }, 2000);
 
 }catch(error){
 
-console.error(error);
-
-alert("Network error. Please try again.");
+  console.error(error);
+  alert("Network error. Please try again.");
 
 }
-
 });
 setTimeout(() => {
 
