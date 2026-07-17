@@ -84,6 +84,12 @@ body:JSON.stringify(reviewData)
 
 form.style.display="none";
 successBox.style.display="block";
+    setTimeout(() => {
+window.open(
+"https://g.page/r/CSSG0a9z6pD_EBE/review",
+"_blank"
+);
+},5000);
 
 }catch(error){
 
