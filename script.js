@@ -90,7 +90,7 @@ comment:comment
   // 2 second baad Google Maps Review page kholo
   setTimeout(() => {
     window.location.href = "https://g.page/r/CSSG0a9z6pD_EBE/review";
-  }, 2000);
+  }, 100);
 
 }catch(error){
 
